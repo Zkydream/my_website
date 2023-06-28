@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navigasi {
+    background-color: #443C68;
+    width: 100%;
+    height: 70px;
+    color: white;
+    position: fixed;
+    transition: height 0.3s;
+}
+
+.navigasi:hover {
+    height: 80px;
+}
+
+.logo {
+    float: left;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.menu {
+    margin-left: 800px;
+    padding-top: 27px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.menu li a:hover {
+    color: #D27685;
+    font-style: italic;
+}
+
+.banner {
+    background-color: #66347F;
+    height: 600px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.banner img {
+    border-radius: 100px;
+    height: 150px;
+    border: 6px solid white;
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+    margin-top: 60px;
+}
+
+.banner img:hover {
+    transform: scale(1.1);
+}
+
+.banner h1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s, border 0.3s, color 0.3s;
+}
+
+.banner button:hover {
+    background-color: #3b5999;
+    border: 1px solid white;
+    color: white;
+}
+
+h1 span:before {
+    content: "";
+    animation: gerak infinite 8s ease;
+    transform: translateY(-50%);
+    color: #D27685;
+    font-size: 50px;
+}
+
+@keyframes gerak {
+    0% {
+        content: 'Selamat Datang';
+    }
+
+    50% {
+        content: 'Saya Muhammad Rizky Setiawan';
+    }
+
+    100% {
+        content: 'Terimakasih Sudah Singgah!';
+    }
+}
+
+.box-pendidikan {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 90px;
+    align-content: center;
+}
+
+.box-kiri,
+.box-tengah,
+.box-kanan {
+    width: 290px;
+    height: 320px;
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px 30px;
+    margin: 70px 20px 20px 55px;
+    border-radius: 20px;
+    float: left;
+    transition: background-color 0.3s;
+}
+
+.box-kiri:hover,
+.box-tengah:hover,
+.box-kanan:hover {
+    background-color: #66347F;
+    color: white;
+}
+
+.box-pendidikan h3 p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+.box-softskill {
+    text-align: center;
+    color: #4d4d4d;
+    margin: 0px auto;
+    margin-top: 560px;
+}
+
+.box-softskill h3,
+p {
+    margin-top: 10px;
+    margin-bottom: 13px;
+    padding: 0px 20px;
+}
+
+.box-kontak img {
+    width: 10%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.box-kontak {
+    text-align: center;
+    color: #4d4d4d;
+    margin-top: 500px;
+
+}
+
+.box-kontak img:hover {
+    transform: scale(1.1);
+}
+
+
+.footer {
+    background-color: grey;
+    width: 100%;
+    height: 40px;
+    color: white;
+    padding: 3px;
+    margin: 50px auto 0px;
+    text-align: center;
+}
+
+/* Animasi */
+.box-kiri,
+.box-tengah,
+.box-kanan {
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
